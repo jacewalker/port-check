@@ -4,7 +4,6 @@ require 'timeout'
 # Obtains information from user for target provided as command-line arguments 1 & 2
 # PORT = ARGV[0] || 22
 HOST = ARGV[0] || 'localhost'
-openPorts = []
 
 def scan250
     for p in 1...250 do
