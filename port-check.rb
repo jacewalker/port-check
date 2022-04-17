@@ -7,7 +7,7 @@ HOST = ARGV[1] || 'localhost'
 
 # Attempts TCP connection and will timeout after 1 second
 begin
-    results = Timeout.timeout(1) do
+    results = Timeout.timeout(0.1) do
         socket = TCPSocket.new(HOST, PORT)
         $status = "open"
     end
